@@ -5,22 +5,22 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); // Stop form from submitting normally
         let isValid = true; // Assume everything is correct
 
-        // Get input fields
+        // Get input fields for the following
         const fullName = document.getElementById("fullName");
         const email = document.getElementById("email");
         const phone = document.getElementById("phone");
         const password = document.getElementById("password");
 
-        // Clear old error messages
+        // delete old error messages
         document.querySelectorAll(".error-message").forEach(msg => msg.style.display = "none");
 
         // Check full name (only letters and spaces allowed)
-        if (!/^[A-Za-z\s]+$/.test(fullName.value)) {
+        if (!/^[A-Za-z\s/]+$/.test(fullName.value)) {
             showError(fullName, "Use only letters and spaces");
             isValid = false;
         }
 
-        // Check email (basic format check)
+        // Check email 
         if (!/^\S+@\S+\.\S+$/.test(email.value)) {
             showError(email, "Enter a valid email address");
             isValid = false;
