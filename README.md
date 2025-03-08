@@ -1,8 +1,9 @@
-Project Overview
-This project is a simple web page that validates user input using JavaScript Regular Expressions (RegExp).
-The form includes:
+JavaScript Regex Form Validation 
 
-Full Name (Only alphabetic characters and spaces)
-Email Address (Must be in a valid email format)
-Phone Number (Only digits, 10-15 characters)
-Password (At least 8 characters, including one uppercase letter, one lowercase letter, and one number)
+Project Overview
+This is a simple web form validation project using JavaScript and Regular Expressions (RegExp). The goal is to ensure users enter valid information before submitting the form. The form includes the following fields:
+
+Full Name – Only alphabetic characters and spaces are allowed.
+Email Address – Must follow a valid email format (e.g., example@email.com).
+Phone Number – Only digits allowed, with a length between 10 to 15 characters.
+Password – Must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one number.
